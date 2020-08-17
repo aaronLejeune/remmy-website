@@ -1,0 +1,290 @@
+$groen: rgb(94, 204, 199);
+$donkergroen: rgb(81, 187, 182);
+$grijs: rgb(239, 239, 239);
+$donkergrijs: rgb(24, 24, 24);
+$lichtgrijs: rgb(230, 230, 230);
+
+body, html {
+    height: 100%;
+}
+
+body{
+    background-color: $grijs;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    color: $donkergrijs;/* grijs*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+h1{
+    font-size: 4em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+h3{
+    font-size: 30px;
+    font-weight: normal;
+    color: $groen;
+}
+.hero-header {
+    position:fixed;
+    width: 100%;
+}
+.navke {
+    padding: 5%;
+}
+#header-logo{
+    height: 70px;
+}
+
+.hero{
+    padding-top: 200px;
+
+    height: 100vh;
+    background-image: url(images/headerImage2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .animated{
+        padding-left: 100px;
+    }
+}
+.hero2 {
+    height: 100vh;
+    background-image: url(images/qr-code.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row{
+        padding-left: 100px;
+    }
+}
+.hero3 {
+    height: 100vh;
+    padding-left: 80px;
+    background-image: url(images/headerImage3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        padding-left: 100px;
+    }
+}
+.hero4 {
+    height: 100vh;
+    padding-left: 80px;
+    background-image: url(images/headerImage4.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        padding-left: 100px;
+    }
+}
+.shopingNumber {
+    position: absolute;
+    bottom: 42px;
+    right: -10px;
+    background-color: $grijs;
+    border-color: $groen;
+    border-width: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: $donkergrijs;
+    padding-top: 3px;
+
+}
+.vertical-center{
+    padding-left: 10%;
+    min-height: 100%;
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+}
+.btn-primary {
+    color: #fff;
+    background-color: $groen;
+    border-color: $groen;
+    border-width: 2px;
+    padding: 16px 32px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.11);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: $donkergroen;
+    border-color: $donkergroen;
+    padding: 16px 32px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+}
+.btn-primary:active {
+    color: #fff !important;
+    background-color: $donkergroen !important;
+    border-color: $donkergroen !important;
+    padding: 16px 32px;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.41);
+}
+.btn-primary:focus {
+    color: #fff;
+    background-color: $donkergroen;
+    border-color: $donkergroen;
+    box-shadow: 0 0 0 0.2rem rgba(94, 204, 199, .5);
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#arrow {
+    color: $groen;
+    text-decoration: none;
+}
+#arrowMargin{
+    position: absolute;
+    left: 48%;
+    bottom: 20px;
+
+}
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+    color: rgba(0, 0, 0, 0.41);
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.onderste{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.price{
+    padding-top: 10px;
+    font-size: 3em;
+}
+.tax {
+    padding-left: 10px;
+    font-size: 15px;
+}
+.pricing{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-evenly;
+
+    .plus{
+        background-color: $lichtgrijs;
+        border-radius: 5px;
+        padding: 20px 0px;
+        width: 33.3333333333%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .getal{
+        width: 33.3333333333%;
+        padding: 20px 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .min {
+        background-color: $lichtgrijs;
+        border-radius: 5px;
+        width: 33.3333333333%;
+        padding: 20px 0px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-evenly;
+
+    #white{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+    }
+    #black {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+    }
+    #blue {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        -webkit-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        -moz-box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+        box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.575);
+    }
+}
+
+
+
+
+
+
+.warning{
+    p{
+        padding-top: 10px;
+        color: $groen;
+    }
+    
+    
+}
+.product-shot{
+    width: 100%;
+}
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
